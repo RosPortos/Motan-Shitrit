@@ -1,0 +1,199 @@
+* {
+    font-family: "Assistant", sans-serif;
+}
+
+body {
+    &.scroll-hide {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 74.4792vw;
+    margin: 0 auto;
+    padding: 0 0.7813vw;
+}
+
+.page {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.btn {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.5208vw;
+    width: 13.9583vw;
+    height: 3.1771vw;
+    border-radius: 1.8229vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &.btn--transparent {
+        color: #7639b2;
+        border: 0.1042vw solid;
+        border-image-source: linear-gradient(
+                202.45deg,
+                #8432b1 0%,
+                #6a3eb3 100%
+            )
+            0.1042vw;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out,
+            border 0.3s ease-in-out;
+        &:hover {
+            background: #4a2f9f;
+            color: #ffffff;
+            border: 0.1042vw solid transparent;
+        }
+    }
+    &.btn--purple {
+        color: #ffffff;
+        &::after {
+            position: absolute;
+            content: "";
+            background: linear-gradient(202.45deg, #8432b1 0%, #6a3eb3 100%);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -2;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../img/icon/btn-elem.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 11.4583vw;
+            height: 4.5833vw;
+            display: block;
+            left: -1.8229vw;
+            z-index: -1;
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover {
+            &::before {
+                transform: scale(5) translateX(4.5833vw);
+            }
+        }
+    }
+    &.btn--whatsapp {
+        color: #ffffff;
+        img {
+            position: absolute;
+            right: 1.0417vw;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            background: #25d366;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -2;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../img/icon/btn-elem-green.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 11.4583vw;
+            height: 4.5833vw;
+            display: block;
+            left: -1.8229vw;
+            z-index: -1;
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover {
+            &::before {
+                transform: scale(5) translateX(4.5833vw);
+            }
+        }
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    left: 1.3021vw;
+    bottom: 1.3021vw;
+    width: 2.2917vw;
+    height: 2.2917vw;
+    z-index: 10;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.title {
+    font-weight: 700;
+    color: #4f5561;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sec-p {
+    padding: 3.25vw 0;
+}
+
+.decor-background {
+    position: relative;
+    margin-bottom: 1.25vw;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 0.625vw;
+        z-index: -1;
+        right: -1.3021vw;
+        bottom: -1.3021vw;
+        background-color: #e2e7f0;
+    }
+}
+
+.corner-decor {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../img/decor/corner-decor.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 23.4375vw;
+        height: 24.2188vw;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.ofer-block {
+    max-width: 28.125vw;
+    .ofer-block__descr {
+        margin-top: 1.5625vw;
+    }
+    .ofer-block__btn {
+        margin-top: 1.5625vw;
+    }
+}
+
+.wrap-sec {
+    .wrap-sec-bg {
+        background: #f3f6fb;
+        padding: 3.3854vw 0;
+    }
+}

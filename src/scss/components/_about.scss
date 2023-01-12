@@ -1,0 +1,33 @@
+.about {
+    padding-top: 0;
+    margin-top: -3.3854vw;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5.2083vw;
+    }
+}
+
+.about-wrap {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #f3f6fb 100%
+    );
+    padding: 6.7708vw 0;
+}
+
+.about__img {
+    z-index: 2;
+    width: 31.4583vw;
+    height: 33.8542vw;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &::before {
+        background: #e2e7f0;
+    }
+}
