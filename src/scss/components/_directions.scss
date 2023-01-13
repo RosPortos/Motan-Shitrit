@@ -1,0 +1,37 @@
+.directions {
+    background: #f3f6fb;
+    padding: 7.8125vw 0;
+}
+
+.directions__wrapper {
+    margin-top: 3.3854vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5625vw;
+}
+.directions-box {
+    background: #ffffff;
+    border-radius: 0.625vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 18.2292vw;
+    padding: 2.6042vw;
+    text-align: center;
+    img {
+        width: 3.3854vw;
+        height: 3.3854vw;
+    }
+    h3 {
+        font-weight: 700;
+        color: #4f5561;
+        margin-top: 1.4063vw;
+        line-height: 1.7188vw;
+    }
+    div {
+        font-weight: 400;
+        color: #666c77;
+        margin-top: 1.0417vw;
+    }
+}

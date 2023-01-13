@@ -46,6 +46,7 @@
         }
     }
 }
+
 .mail-link {
     &::before {
         background-image: url("../img/icon/mail-link.svg");
@@ -63,6 +64,16 @@
         height: 0.6771vw;
     }
 }
+
+.not-main {
+    .header-contact {
+        height: 4.2708vw;
+        &::before {
+            display: none;
+        }
+    }
+}
+
 .nav {
     ul {
         display: flex;

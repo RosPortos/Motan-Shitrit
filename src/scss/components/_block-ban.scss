@@ -1,0 +1,26 @@
+.block-ban {
+    position: relative;
+    height: 13.6979vw;
+    padding: 1.0417vw 0;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+        h1 {
+            font-weight: 700;
+            color: #ffffff;
+            margin-top: 1.0417vw;
+        }
+    }
+}

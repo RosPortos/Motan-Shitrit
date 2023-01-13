@@ -104,9 +104,9 @@
 				<div class="about-wrap">
 					<div class="container">
 						<div class="ofer-block">
-							<h3 class="ofer-block__title title fz50">
+							<h2 class="ofer-block__title title fz50">
 								אודות
-							</h3>
+							</h2>
 							<div class="ofer-block__descr fz20">
 								יועץ משכנתאות טוב ומקצועי יידע לסלול עבורכם את הדרך הבטוחה, המהירה, הקלה והחסכונית ביותר
 								לקבלת משכנתא לצורך רכישת
@@ -125,34 +125,7 @@
 				</div>
 			</section>
 
-			<section class="recommend sec-p">
-				<div class="container">
-					<h2 class="recommend__title title text-center fz50">
-						לקוחות ממליצים
-					</h2>
-					<div class="recommend__wrapper">
-						<div class="swiper recommend-swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide recommend-item">
-									<img loading="lazy" src="img/section/recommend-img.png" alt="img">
-									<div class="recommend-item__btn"></div>
-								</div>
-								<div class="swiper-slide recommend-item">
-									<img loading="lazy" src="img/section/recommend-img2.png" alt="img">
-									<div class="recommend-item__btn"></div>
-								</div>
-								<div class="swiper-slide recommend-item">
-									<img loading="lazy" src="img/section/recommend-img3.png" alt="img">
-									<div class="recommend-item__btn"></div>
-								</div>
-							</div>
-							<div class="swiper-pagination"></div>
-						</div>
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>
-				</div>
-			</section>
+			@include('partials/recommend.html')
 
 			<div class="wrap-sec sec-p">
 				<div class="wrap-sec-bg corner-decor">
@@ -202,31 +175,7 @@
 				</div>
 			</div>
 
-			<section class="subscribe sec-p">
-				<div class="container">
-					<div class="subscribe__wrapper corner-decor">
-						<h2 class="subscribe__title title text-center fz50">
-							להירשם לניוזלטר
-						</h2>
-						<div class="subscribe__subtitle fz20">
-							הישאר מעודכן בחדשות האחרונות ואל תפספס שום דבר חשוב!
-						</div>
-						<div class="subscribe-form">
-							<form action="#">
-								<input class="fz20" name="name" id="name" placeholder="האימייל שלך" type="text">
-								<button type="submit" class="btn btn--purple">שלח</button>
-							</form>
-						</div>
-						<div class="subscribe__bottom">
-							<p class="fz20">או להצטרף לקבוצת וואטסאפ סודית:</p>
-							<a href="#" class="btn btn--whatsapp">
-								<img src="img/icon/whatsapp-icon.svg" alt="img">
-								לְהִצְטַרֵף
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
+			@include('partials/subscribe.html')
 
 			<section class="articles sec-p">
 				<div class="container">
@@ -297,12 +246,10 @@
 
 		</main>
 
-		<a href="#" class="whatsapp">
-			<img src="img/icon/whatsapp.svg" alt="img">
-		</a>
-
 		@include('partials/footer.html')
 	</div>
+
+	<script src="https://www.youtube.com/iframe_api"></script>
 	<script src="js/vendor.js"></script>
 	<script src="js/main.js"></script>
 </body>
