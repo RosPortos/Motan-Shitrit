@@ -62,6 +62,29 @@
     display: flex;
     align-items: center;
     gap: 1.3021vw;
+    &.soc-article {
+        background: #f3f6fb;
+        border-radius: 0.625vw;
+        max-width: 44.4271vw;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        gap: 1.3021vw;
+        height: 4.6354vw;
+        padding: 1.0417vw 2.8125vw;
+        p {
+            margin-left: auto;
+            font-weight: 400;
+            color: #666c77;
+        }
+        a {
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+                filter: brightness(0.8) !important;
+            }
+        }
+    }
     a {
         display: block;
         width: 1.0938vw;
