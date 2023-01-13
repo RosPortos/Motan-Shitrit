@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5625vw;
+    row-gap: 4.1667vw;
 }
 
 .articles-item {
@@ -85,13 +86,13 @@
 .filter {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.5208vw;
 }
 .filter-btn {
     border: 1px solid #d3d9e2;
-    border-radius: 300px;
-    width: 197px;
-    height: 50px;
+    border-radius: 15.625vw;
+    width: 10.2604vw;
+    height: 2.6042vw;
     position: relative;
     overflow: hidden;
     font-weight: 400;
@@ -110,7 +111,7 @@
         opacity: 0;
         transform: scale(0.8);
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        border-radius: 300px;
+        border-radius: 15.625vw;
     }
     &:hover {
         color: #ffffff;

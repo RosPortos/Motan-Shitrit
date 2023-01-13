@@ -217,3 +217,46 @@ body {
         padding: 3.3854vw 0;
     }
 }
+
+.pagination {
+    margin: 4.1667vw auto 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .pagination__arrow {
+        width: 1.7708vw;
+        height: 1.7708vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    .arrow-prev {
+        background-image: url("../img/icon/pagin-arrow-next.svg");
+        margin-left: 1.0417vw;
+    }
+    .pagination__link {
+        font-weight: 400;
+        font-size: 0.7292vw;
+        line-height: 1.5625vw;
+        color: #000000;
+        padding: 0 0.5208vw;
+        display: block;
+    }
+    .active {
+        width: 1.4063vw;
+        height: 1.4063vw;
+        background: linear-gradient(202.45deg, #8432b1 0%, #6a3eb3 100%);
+        border-radius: 50%;
+        color: #ffffff;
+        margin: 0 0.5208vw;
+        pointer-events: none;
+    }
+    .dots {
+        pointer-events: none;
+    }
+    .arrow-next {
+        background-image: url("../img/icon/pagin-arrow-prev.svg");
+        margin-right: 1.0417vw;
+    }
+}
