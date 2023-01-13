@@ -40,5 +40,13 @@
     "gulp-uglify-es": "^3.0.0",
     "node-w3c-validator": "^2.0.1",
     "sass": "^1.38.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RosPortos/Motan-Shitrit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RosPortos/Motan-Shitrit/issues"
+  },
+  "homepage": "https://github.com/RosPortos/Motan-Shitrit#readme"
 }
