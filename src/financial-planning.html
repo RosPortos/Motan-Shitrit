@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page not-main">
+        @include('partials/header.html')
+
+        <main class="main">
+
+            <div class="block-ban">
+                <img src="img/section/block-ban-img3.jpg" alt="img">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <span>עמוד ראשי</span>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="index.html">תכנון פיננסי</a>
+                        </li>
+                    </ul>
+                    <h1 class="fz65">תכנון פיננסי</h1>
+                </div>
+            </div>
+
+            <section class="about about-two sec-p">
+                <div class="about-wrap">
+                    <div class="container">
+                        <div class="ofer-block">
+                            <h2 class="ofer-block__title title fz50">
+                                פנסיוני-פיננסים – איך זה עובד?
+                            </h2>
+                            <div class="ofer-block__descr fz20">
+                                <ul>
+                                    <li>
+                                        שלב בחינת מצב קיים – ניתוח והיכרות הלקוח, כדי להבין את צרכיו ומצבו הנוכחי
+                                    </li>
+                                    <li>
+                                        שלב התאמה ותכנון – תכנון נכון ומותאם אישית בהתאם לצרכים של כל אחד
+                                    </li>
+                                    <li>
+                                        שלב קבלת החלטות – ניהול מול הגופים והמוצרים השונים
+                                    </li>
+                                    <li>
+                                        שלב ליווי, עדכון ובקרה – עדכון על מצב התיק במהלך תקופת זמן קבועה מוגדרת
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="ofer-block__btn btn btn--purple fz20">
+                                לקבלת ייעוץ
+                            </a>
+                        </div>
+                        <div class="about__img decor-background">
+                            <img loading="lazy" src="img/section/about-img4.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="services__wrapper">
+                    <div class="services-item corner-decor white-bg">
+                        <div class="container">
+                            <div class="ofer-block">
+                                <h3 class="ofer-block__title title fz50">
+                                    או תיבת ותשובות
+                                </h3>
+                                <div class="ofer-block__descr fz20">
+                                    או תיבת ותשובות אקטואליה אנא, מאמר פוליטיקה דת בדף. שמו החלל המלצת ספרדית על, ביוני
+                                    משופרות לוח בה, משחקים שיתופית עקרונות חפש בה. צעד המלחמה אקטואליה דת, החלה כלכלה אל
+                                    מדע. קהילה המחשב בחירות מה סדר, ספרות לציין הנאמנים את צעד. שמו יכול יסוד
+                                </div>
+                                <a href="#" class="ofer-block__btn btn btn--purple fz20">
+                                    קרא עוד
+                                </a>
+                            </div>
+                        </div>
+                        <img class="services-item__img" src="img/section/services-item-img6.jpg" alt="img">
+                    </div>
+                    <div class="services-item corner-decor">
+                        <div class="container">
+                            <div class="ofer-block">
+                                <h3 class="ofer-block__title title fz50">
+                                    קרן ביוני קצרמרים אווירונאוטיקה
+                                </h3>
+                                <div class="ofer-block__descr fz20">
+                                    המלצת ויקיפדיה אנא מה, תוכל העזרה רבה על. שפות התפתחות מבוקשים אם חפש, למנוע מיזמי
+                                    אחרונים אתה על. דת ארץ הארץ דפים המקובל, שער לכאן ציור הקהילה בה, קבלו ספינות
+                                    אנציקלופדיה אם אנא. ב שער כלים תאולוגיה האנציקלופדיה. שער אל היום רקטות למאמרים, מלא
+                                    ב
+                                </div>
+                                <a href="#" class="ofer-block__btn btn btn--purple fz20">
+                                    קרא עוד
+                                </a>
+                            </div>
+                        </div>
+                        <img class="services-item__img" src="img/section/services-item-img7.jpg" alt="img">
+                    </div>
+                </div>
+            </section>
+
+            @include('partials/form-block.html')
+
+            <div class="wrap-sec sec-p">
+                <div class="wrap-sec-bg corner-decor">
+                    @include('partials/articles.html')
+                </div>
+            </div>
+
+            @include('partials/recommend.html')
+
+            @include('partials/partners.html')
+
+            @include('partials/subscribe.html')
+
+        </main>
+
+        @include('partials/footer.html')
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

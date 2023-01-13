@@ -75,7 +75,7 @@
             object-fit: cover;
         }
         &:hover {
-            filter: brightness(20);
+            filter: brightness(20) !important;
         }
     }
 }

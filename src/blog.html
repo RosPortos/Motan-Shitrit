@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page not-main">
+        @include('partials/header.html')
+
+        <main class="main">
+
+            <div class="block-ban">
+                <img src="img/section/block-ban-img4.jpg" alt="img">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <span>עמוד ראשי</span>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="index.html">מאמרים</a>
+                        </li>
+                    </ul>
+                    <h1 class="fz65">מאמרים</h1>
+                </div>
+            </div>
+
+            <section class="articles sec-p">
+                <div class="container">
+                    <div class="filter">
+                        <button class="filter-btn fz20 active">כל המאמרים</button>
+                        <button class="filter-btn fz20">משכנתאות</button>
+                        <button class="filter-btn fz20">תכנון פיננסי</button>
+                        <button class="filter-btn fz20">חֲדָשׁוֹת</button>
+                        <button class="filter-btn fz20">ביקורות</button>
+                    </div>
+                    <div class="articles__wrapper">
+                        <article class="articles-item">
+                            <a href="#">
+                                <div class="articles-item__top">
+                                    <img loading="lazy" src="img/section/articles-item-img3.jpg" alt="img">
+                                    <div class="stickers">
+                                        <time class="sticker" datetime="2021-10-07">7 באוק׳ 2021</time>
+                                        <div class="articles-item__category sticker">משכנתאות</div>
+                                    </div>
+                                </div>
+                                <h3 class="articles-item__title fz24">
+                                    מחזור משכנתא
+                                </h3>
+                                <div class="articles-item__descr fz20">
+                                    ככל שעובר הזמן, אתם עומדים ביותר ויותר קריטריונים שלא עמדתם בהם בזמן לקיחת
+                                    המשכנתא,
+                                    אך המשכנתא שלכם ממשיכה
+                                    להתנהל לפי התנאים...
+                                </div>
+                            </a>
+                        </article>
+                        <article class="articles-item">
+                            <a href="#">
+                                <div class="articles-item__top">
+                                    <img loading="lazy" src="img/section/articles-item-img2.jpg" alt="img">
+                                    <div class="stickers">
+                                        <time class="sticker" datetime="2021-10-07">7 באוק׳ 2021</time>
+                                        <div class="articles-item__category sticker">משכנתאות</div>
+                                    </div>
+                                </div>
+                                <h3 class="articles-item__title fz24">
+                                    פיקדון מול קרן כספית
+                                </h3>
+                                <div class="articles-item__descr fz20">
+                                    ככל שעובר הזמן, אתם עומדים ביותר ויותר קריטריונים שלא עמדתם בהם בזמן לקיחת
+                                    המשכנתא,
+                                    אך המשכנתא שלכם ממשיכה
+                                    להתנהל לפי התנאים...
+                                </div>
+                            </a>
+                        </article>
+                        <article class="articles-item">
+                            <a href="#">
+                                <div class="articles-item__top">
+                                    <img loading="lazy" src="img/section/articles-item-img.jpg" alt="img">
+                                    <div class="stickers">
+                                        <time class="sticker" datetime="2021-10-07">7 באוק׳ 2021</time>
+                                        <div class="articles-item__category sticker">משכנתאות</div>
+                                    </div>
+                                </div>
+                                <h3 class="articles-item__title fz24">
+                                    מחזור משכנתא
+                                </h3>
+                                <div class="articles-item__descr fz20">
+                                    ככל שעובר הזמן, אתם עומדים ביותר ויותר קריטריונים שלא עמדתם בהם בזמן לקיחת
+                                    המשכנתא,
+                                    אך המשכנתא שלכם ממשיכה
+                                    להתנהל לפי התנאים...
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <div class="wrap-sec sec-p">
+                <div class="wrap-sec-bg corner-decor">
+                    @include('partials/articles.html')
+                </div>
+            </div>
+
+            @include('partials/subscribe.html')
+
+        </main>
+
+        @include('partials/footer.html')
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

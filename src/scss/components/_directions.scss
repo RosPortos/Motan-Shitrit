@@ -3,6 +3,14 @@
     padding: 7.8125vw 0;
 }
 
+.directions__subtitle {
+    font-weight: 400;
+    color: #666c77;
+    max-width: 30.1042vw;
+    text-align: center;
+    margin: 1.5625vw auto 0 auto;
+}
+
 .directions__wrapper {
     margin-top: 3.3854vw;
     display: grid;
@@ -14,10 +22,10 @@
     border-radius: 0.625vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 18.2292vw;
     padding: 2.6042vw;
+    padding-top: 3.3333vw;
     text-align: center;
     img {
         width: 3.3854vw;
@@ -33,5 +41,22 @@
         font-weight: 400;
         color: #666c77;
         margin-top: 1.0417vw;
+    }
+}
+
+.directions__descr {
+    background: linear-gradient(202.45deg, #8432b1 0%, #6a3eb3 100%);
+    border-radius: 0.625vw;
+    width: 43.3333vw;
+    padding: 2.0833vw;
+    text-align: center;
+    margin: 3.3854vw auto 0 auto;
+    font-weight: 400;
+    color: #ffffff;
+    p {
+        margin-bottom: 1.5vw;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

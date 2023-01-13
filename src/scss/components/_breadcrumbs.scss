@@ -32,9 +32,10 @@
         &::after {
             position: absolute;
             content: "»";
-            top: 0.2604vw;
             left: -0.5729vw;
             color: #ffffff;
+            font-size: 0.8333vw;
+            line-height: 1.5625vw;
         }
     }
 }

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page not-main">
+        @include('partials/header.html')
+
+        <main class="main">
+
+            <div class="block-ban">
+                <img src="img/section/block-ban-img2.jpg" alt="img">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <span>עמוד ראשי</span>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="index.html">משכנתאות</a>
+                        </li>
+                    </ul>
+                    <h1 class="fz65">משכנתאות</h1>
+                </div>
+            </div>
+
+            <section class="about about-two sec-p">
+                <div class="about-wrap">
+                    <div class="container">
+                        <div class="ofer-block">
+                            <h2 class="ofer-block__title title fz50">
+                                היום כבר כולם יודעים – לא לוקחים משכנתא ללא ליווי של איש מקצוע !
+                            </h2>
+                            <div class="ofer-block__descr fz20">
+                                עומדים בפני לקיחת משכנתא חדשה ? <br>
+                                יש לכם משכנתא קיימת ורוצים לבדוק עבורה מחזור ? <br>
+                                משפחות שליוויתי בתהליך לקיחת משכנתא חדשה או מחזור משכנתא קיימת הצליחו להשיג משכנתאות
+                                בתנאים מצוינים, משכנתאות בהתאמה אישית לצרכים שלהן והצליחו להשיג חיסכון של עשרות ומאות
+                                אלפי שקלים בעלויות המשכנתא
+                            </div>
+                            <a href="#" class="ofer-block__btn btn btn--purple fz20">
+                                לקבלת ייעוץ
+                            </a>
+                        </div>
+                        <div class="about__img decor-background">
+                            <img loading="lazy" src="img/section/about-img3.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="directions corner-decor">
+                <div class="container">
+                    <h2 class="directions__title title text-center fz50">
+                        שירות בתחומים הבאים:
+                    </h2>
+                    <div class="directions__subtitle fz20">
+                        ככל שעובר הזמן, אתם עומדים ביותר ויותר קריטריונים שלא עמדתם בהם בזמן לקיחת המשכנתא, אך המשכנתא
+                        שלכם ממשיכה להתנהל לפי התנאים הישנים שלכם – ועל זה אתם משלמים המון כסף, בלשון המעטה.
+                    </div>
+                    <div class="directions__wrapper">
+                        <div class="directions-box">
+                            <img loading="lazy" src="img/icon/directions-box-icon6.svg" alt="img">
+                            <h3 class="fz24">
+                                כושר החזר
+                            </h3>
+                            <div class="fz20">
+                                קריטריון זה מתאר את החלק של התשלום החודשי על המשכנתא מתוך סך ההכנסה החודשית. ההכנסות
+                                שלכם עלו בשנים האחרונות? כושר ההחזר שלכם עלה בהתאם ואתם יכולים כעת לקבל תנאים טובים יותר
+                                על המשכנתא שלכם.
+                            </div>
+                        </div>
+                        <div class="directions-box">
+                            <img loading="lazy" src="img/icon/directions-box-icon5.svg" alt="img">
+                            <h3 class="fz24">
+                                תקופת המשכנתא
+                            </h3>
+                            <div class="fz20">
+                                ככל שהמשכנתא ארוכה יותר, כך הריביות גבוהות יותר. בואו נניח ולקחתם מסלול מסוים במשכנתא
+                                (שנלקחה לפני 5 שנים) למשך 25 שנים, כלומר, כרגע נשארו לכם 20 שנה במסלול זה. הריבית
+                                שקיבלנו עבור מסלול זה היא ריבית ל-25 שנים. אם תמחזרו היום את המשכנתא (ובהנחה שתרצו לשמור
+                                על אותה התקופה שנותרה), תוכלו לקחת את אותו מסלול בתנאים של 20 שנים שהם תנאים טובים יותר.
+                                בפועל, ישנו סיכוי שבמחזור המשכנתא תוכלו אף לקצר את התקופות וכך לקבל תנאים עוד יותר
+                                טובים.
+                            </div>
+                        </div>
+                        <div class="directions-box">
+                            <img loading="lazy" src="img/icon/directions-box-icon4.svg" alt="img">
+                            <h3 class="fz24">
+                                אחוז המימון של המשכנתא
+                            </h3>
+                            <div class="fz20">
+                                כלי עיקרי בקביעת הריביות שלכם במשכנתא. אחוז המימון מתאר כמה אחוז מעלות הבית לקחת
+                                כמשכנתא. ככל שאחוז המימון גבוה יותר, כך הריביות גבוהות יותר. עם זאת, ככל שאנו נעים על
+                                ציר הזמן בין היום בו לקחנו את המשכנתא לבין הזמן הנוכחי, קורים שני דברים שמשפרים את מצבכם
+                                באחוז המימון. הראשון, סכום המשכנתא שלכם (יתרת הקרן) יורד, והשני, שווי הבית שלכם כנראה
+                                עלה.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="directions__descr fz20">
+                        <p>
+                            אלו הן רק 3 דוגמאות, יש עוד המון קריטריונים שהופכים את מחזור המשכנתא לכדאי ביותר. במחזור
+                            המשכנתא
+                            ניתן להגיע לחיסכון של עד מאות אלפי שקלים (!), תוך כדי קיצור המשכנתא ב-5 שנים ואף יותר. אמנם
+                            שנת
+                            2022 עבור רובנו היא כנראה לא שנת מחזור המשכנתא, אך תמיד שווה לבדוק זאת – הבדיקה ללא עלות.
+                        </p>
+                        <p>
+                            <strong>
+                                רוצים לבדוק את המשכנתא שלכם וכדאיות המחזור שלה? תנו לי לבדוק זאת עבורכם – הבדיקה ללא
+                                עלות.
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="services__wrapper">
+                    <div class="services-item corner-decor white-bg">
+                        <div class="container">
+                            <div class="ofer-block">
+                                <h3 class="ofer-block__title title fz50">
+                                    חזון במשכנתאות
+                                </h3>
+                                <div class="ofer-block__descr fz20">
+                                    החזון שלנו הוא לאפשר לכל נוטל משכנתא בישראל איכות חיים גבוהה מהבחינה האישית והכלכלית
+                                    על ידי התאמת המשכנתא לצרכים וליכולת שלו כיום ובעתידנשמח ללוות אתכם צעד אחר צעד,
+                                    למשכנתא מצוינת שתעניק לכם כלי לצמיחה כלכלית במקום נטל כלכלי לאורך שנים.
+                                </div>
+                                <a href="#" class="ofer-block__btn btn btn--purple fz20">
+                                    קרא עוד
+                                </a>
+                            </div>
+                        </div>
+                        <img class="services-item__img" src="img/section/services-item-img4.jpg" alt="img">
+                    </div>
+                    <div class="services-item corner-decor">
+                        <div class="container">
+                            <div class="ofer-block">
+                                <h3 class="ofer-block__title title fz50">
+                                    למה יועץ משכנתאות כל כך חשוב ?
+                                </h3>
+                                <div class="ofer-block__descr fz20">
+                                    יועץ משכנתאות טוב ומקצועי יידע לסלול עבורכם את הדרך הבטוחה, המהירה, הקלה והחסכונית
+                                    ביותר לקבלת משכנתא לצורך רכישת נכס
+                                    ליווי על ידי יועץ משכנתאות מקצועי בתהליך לקיחת משכנתא חדשה יכול להביא לחיסכון של
+                                    מאות אלפי שקלים בעלות המשכנתא (ריבית והצמדה)
+                                </div>
+                                <a href="#" class="ofer-block__btn btn btn--purple fz20">
+                                    קרא עוד
+                                </a>
+                            </div>
+                        </div>
+                        <img class="services-item__img" src="img/section/services-item-img5.jpg" alt="img">
+                    </div>
+                </div>
+            </section>
+
+            @include('partials/form-block.html')
+
+            <div class="wrap-sec sec-p">
+                <div class="wrap-sec-bg corner-decor">
+                    @include('partials/articles.html')
+                </div>
+            </div>
+
+            @include('partials/recommend.html')
+
+            @include('partials/partners.html')
+
+            @include('partials/subscribe.html')
+
+        </main>
+
+        @include('partials/footer.html')
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

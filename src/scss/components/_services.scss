@@ -1,6 +1,18 @@
-.services__wrapper {
-    margin-top: 3.3854vw;
+.services-one {
+    padding-bottom: 3.25vw;
+    .services-item {
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            #f3f6fb 100%
+        );
+    }
 }
+
+.services__title {
+    margin-bottom: 3.3854vw;
+}
+
 .services-item {
     display: flex;
     align-items: center;
@@ -12,6 +24,24 @@
         right: 0;
         left: inherit;
         bottom: -8px;
+    }
+    &.img-right {
+        &::before {
+            transform: rotateZ(0) translateX(-10vw);
+            right: inherit;
+            left: 0;
+            bottom: 0;
+        }
+        .ofer-block {
+            margin-right: auto;
+        }
+        .services-item__img {
+            left: inherit;
+            right: 0;
+        }
+    }
+    &.white-bg {
+        background: #ffffff;
     }
     &:nth-child(even) {
         &::before {
