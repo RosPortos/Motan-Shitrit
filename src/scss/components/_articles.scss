@@ -6,6 +6,18 @@
     row-gap: 4.1667vw;
 }
 
+.articles-media {
+    .articles-item {
+        a {
+            padding-bottom: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
 .articles-item {
     a {
         position: relative;
@@ -82,6 +94,10 @@
     color: #666c77;
     margin-top: 0.8854vw;
     @include text-hide(3);
+    a {
+        text-decoration: underline;
+        color: #666c77;
+    }
 }
 
 .filter {
