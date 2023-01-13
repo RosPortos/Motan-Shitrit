@@ -108,3 +108,15 @@
         }
     }
 }
+
+.form-contact {
+    margin: 0 auto;
+    text-align: center;
+    padding: 6.7708vw 0 3.3854vw 0;
+    max-width: 25.7292vw;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

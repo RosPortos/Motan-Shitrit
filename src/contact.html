@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page not-main">
+        @include('partials/header.html')
+
+        <main class="main">
+
+            <div class="block-ban">
+                <img src="img/section/block-ban-img9.jpg" alt="img">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html">עמוד ראשי</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>יצירת קשר</span>
+                        </li>
+                    </ul>
+                    <h1 class="fz65">יצירת קשר</h1>
+                </div>
+            </div>
+
+            <section class="directions directions-contact corner-decor">
+                <div class="container">
+                    <h2 class="directions__title title text-center fz50">
+                        צרו איתי קשר
+                    </h2>
+                    <div class="directions__wrapper">
+                        <div class="directions-box">
+                            <img loading="lazy" src="img/icon/directions-box-icon7.svg" alt="img">
+                            <a href="tel:0524463466" class="fz24">
+                                052-4463466
+                            </a>
+                            <a href="tel:0522123951" class="fz24">
+                                052-2123951
+                            </a>
+                        </div>
+                        <div class="directions-box">
+                            <img loading="lazy" src="img/icon/directions-box-icon8.svg" alt="img">
+                            <a href="mailto:matan-consult@gmail.com" class="fz24">
+                                matan-consult@gmail.com
+                            </a>
+                        </div>
+                        <div class="directions-box">
+                            <img loading="lazy" src="img/icon/directions-box-icon9.svg" alt="img">
+                            <a href="#" class="fz24">
+                                אביב טו 23, עפולה, ישראל
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form form-contact">
+                <h2 class="form__title fz50">
+                    שלח את הבקשה שלך
+                </h2>
+                <div class="form__subtitle fz20">
+                    השאירו פרטי יצירת קשר ואצור אתכם קשר
+                </div>
+                <form>
+                    <label class="form__input fz20">
+                        <input name="name" placeholder="השם שלך" type="text">
+                    </label>
+                    <label class="form__input fz20">
+                        <input name="phone" placeholder="מס' טלפון" type="tel">
+                    </label>
+                    <label class="form__input fz20">
+                        <input name="email" placeholder="אימייל" type="email">
+                    </label>
+                    <button type="submit" class="form__btn btn btn--purple">שלח</button>
+                </form>
+            </div>
+
+            @include('partials/subscribe.html')
+
+        </main>
+
+        @include('partials/footer.html')
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

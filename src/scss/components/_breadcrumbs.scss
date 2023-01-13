@@ -3,9 +3,8 @@
     z-index: 5;
     &__item {
         display: inline-block;
-        padding-right: 0.625vw;
+        padding-right: 0.2vw;
         position: relative;
-
         a,
         span {
             font-weight: 400;
@@ -30,12 +29,12 @@
         }
 
         &::after {
-            position: absolute;
             content: "»";
             left: -0.5729vw;
             color: #ffffff;
             font-size: 0.8333vw;
             line-height: 1.5625vw;
+            padding-right: 0.2604vw;
         }
     }
 }
