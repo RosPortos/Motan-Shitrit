@@ -1905,4 +1905,12 @@ body.scroll-hide {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+.page-demo {
+  flex-direction: row;
+}
+.page-demo iframe {
+  width: 50vw;
+  height: 100vh;
+}
 /*# sourceMappingURL=main.css.map */

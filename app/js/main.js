@@ -1,4 +1,10 @@
 "use strict";
+
+$('.page-demo__list a').on('click', function (e) {
+  e.preventDefault();
+  var href = $(this).attr('href');
+  $('.page-demo iframe').attr('src', href);
+});
 "use strict";
 
 var header = document.querySelector('.header'),
