@@ -8,4 +8,7 @@ https://rosportos.github.io/Motan-Shitrit/app/article2.html <br>
 https://rosportos.github.io/Motan-Shitrit/app/media.html <br>
 https://rosportos.github.io/Motan-Shitrit/app/webinars.html <br>
 https://rosportos.github.io/Motan-Shitrit/app/contact.html <br>
+https://rosportos.github.io/Motan-Shitrit/app/stages.html <br>
+https://rosportos.github.io/Motan-Shitrit/app/webinar.html <br>
+https://rosportos.github.io/Motan-Shitrit/app/webinar2.html <br>
 https://rosportos.github.io/Motan-Shitrit/app/404.html
