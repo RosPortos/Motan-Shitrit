@@ -71,3 +71,42 @@
         height: 2.7604vw;
     }
 }
+
+@media (max-width: $table) {
+    .subscribe-form form {
+        width: 100%;
+        height: 8.3854vw;
+    }
+    .subscribe__wrapper {
+        max-width: 100%;
+    }
+    .subscribe-form {
+        width: 100%;
+    }
+    .subscribe-form form button {
+        width: 21.9792vw;
+        border-radius: 7.8125vw;
+    }
+    .subscribe-form form input {
+        width: calc(100% - 21.9792vw);
+        padding: 0 4.5625vw;
+    }
+    .subscribe__bottom .btn--whatsapp {
+        width: 40vw;
+        height: 8vw;
+        margin-top: 3.5625vw;
+    }
+    .btn.btn--whatsapp img {
+        width: 6.25vw;
+        height: 4.25vw;
+    }
+    .subscribe__subtitle {
+        margin-top: 3.5625vw;
+    }
+    .subscribe-form {
+        margin-top: 3.5625vw;
+    }
+    .subscribe__bottom {
+        margin-top: 3.5625vw;
+    }
+}

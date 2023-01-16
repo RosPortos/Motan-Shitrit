@@ -54,3 +54,32 @@
         border-radius: 0.625vw;
     }
 }
+
+@media (max-width: 991px) {
+    .promo::before {
+        width: 100vw;
+        height: 80%;
+    }
+    .promo .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .promo__ofer {
+        margin: 0;
+        max-width: 90%;
+    }
+    .promo__descr {
+        max-width: 100%;
+        margin-top: 3.5vw;
+    }
+    .promo__btns {
+        gap: 4.5208vw;
+        margin-top: 4vw;
+    }
+    .promo__img {
+        width: 65vw;
+        height: 89.8542vw;
+        margin-top: 5vw;
+    }
+}

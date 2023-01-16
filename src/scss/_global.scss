@@ -12,6 +12,9 @@ body {
     max-width: 74.4792vw;
     margin: 0 auto;
     padding: 0 0.7813vw;
+    @media (max-width: $table) {
+        max-width: calc(100vw - 30px);
+    }
 }
 
 .page {
@@ -21,6 +24,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 4.2708vw;
+    @media (max-width: $table) {
+        padding-top: 14.2708vw;
+    }
 }
 
 .main {
@@ -128,6 +135,21 @@ body {
             }
         }
     }
+    @media (max-width: $table) {
+        width: 40vw;
+        height: 8vw;
+        border-radius: 4.8229vw;
+        &.btn--purple::before {
+            width: 37.4583vw;
+            height: 27.5833vw;
+            left: -22.8229vw;
+        }
+        &.btn--whatsapp::before {
+            width: 37.4583vw;
+            height: 27.5833vw;
+            left: -22.8229vw;
+        }
+    }
 }
 
 .whatsapp {
@@ -155,6 +177,13 @@ body {
 
 .sec-p {
     padding: 3.25vw 0;
+    @media (max-width: $table) {
+        padding: 8vw 0;
+    }
+}
+
+.white-bg {
+    background-color: #ffffff;
 }
 
 .decor-background {
@@ -170,6 +199,12 @@ body {
         right: -1.3021vw;
         bottom: -1.3021vw;
         background-color: #e2e7f0;
+    }
+    @media (max-width: $table) {
+        &::before {
+            right: -2.3021vw;
+            bottom: -2.3021vw;
+        }
     }
 }
 
@@ -192,11 +227,23 @@ body {
 
 .ofer-block {
     max-width: 28.125vw;
+    &.ofer-block-long {
+        max-width: 33.125vw;
+    }
     .ofer-block__descr {
         margin-top: 1.5625vw;
     }
     .ofer-block__btn {
         margin-top: 1.5625vw;
+    }
+    .ofer-block__sticker {
+        font-weight: 700;
+        color: #ffffff;
+        padding: 0.7813vw 1.5625vw;
+        background: linear-gradient(202.45deg, #8432b1 0%, #6a3eb3 100%);
+        border-radius: 0.625vw;
+        width: fit-content;
+        margin-bottom: 1.0417vw;
     }
     ul {
         li {
@@ -216,12 +263,34 @@ body {
             }
         }
     }
+    @media (max-width: $table) {
+        max-width: 100%;
+        padding: 5vw 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .ofer-block__descr {
+            margin-top: 2.5625vw;
+        }
+        .ofer-block__btn {
+            margin-top: 2.5625vw;
+        }
+    }
 }
 
 .wrap-sec {
     .wrap-sec-bg {
         background: #f3f6fb;
         padding: 3.3854vw 0;
+    }
+    &.form-list {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5.2083vw;
+        }
     }
 }
 

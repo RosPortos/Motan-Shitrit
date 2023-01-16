@@ -1,25 +1,25 @@
 .burger {
-    height: 16px;
-    width: 30px;
+    height: 4.4444vw;
+    width: 8.3333vw;
     justify-content: center;
     align-items: center;
     z-index: 350;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
     display: none;
     position: relative;
 
     span {
         position: absolute;
-        background: #fff;
-        height: 3px;
-        width: 30px;
+        background: #6a3eb3;
+        height: 0.8333vw;
+        width: 8.3333vw;
         display: block;
-        transition: all .3s;
-        border-radius: 5px;
+        transition: all 0.3s;
+        border-radius: 1.3889vw;
 
         &:nth-child(1) {
-            top: 16px;
+            top: 4.4444vw;
         }
 
         &:nth-child(2) {
@@ -28,14 +28,14 @@
         }
 
         &:nth-child(3) {
-            bottom: 16px;
+            bottom: 4.4444vw;
         }
     }
 
     &.active {
         span {
             &:nth-child(1) {
-                top: 6px;
+                top: 1.6667vw;
                 transform: rotate(45deg);
             }
 
@@ -44,7 +44,7 @@
             }
 
             &:nth-child(3) {
-                bottom: 7px;
+                bottom: 1.9444vw;
                 transform: rotate(-45deg);
             }
         }

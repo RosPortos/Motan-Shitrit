@@ -136,3 +136,57 @@
         transform: translate(-50%, -50%);
     }
 }
+
+@media (max-width: $table) {
+    .recommend .swiper {
+        margin-top: 6.3854vw;
+    }
+    .recommend .container {
+        max-width: calc(100% - 30px);
+    }
+    .recommend-item {
+        height: auto;
+    }
+    .recommend-item__btn::after {
+        background-size: contain;
+        width: 3.4688vw;
+        height: 3.5208vw;
+    }
+    .recommend-item__btn {
+        width: 11.8646vw;
+        height: 11.8646vw;
+    }
+    .recommend-item__btn::before {
+        width: 14.1771vw;
+        height: 14.1771vw;
+    }
+    .recommend-item__btn:hover::before {
+        width: 16.6979vw;
+        height: 16.6979vw;
+    }
+    .recommend {
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+        .swiper {
+            overflow: visible;
+            padding-bottom: 7.0833vw;
+        }
+    }
+    .recommend__wrapper {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+    .recommend .swiper-pagination-bullet {
+        width: 2.4688vw;
+        height: 2.4688vw;
+    }
+    .recommend .swiper-pagination-bullet::before {
+        width: 3.6771vw;
+        height: 3.6771vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

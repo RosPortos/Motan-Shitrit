@@ -6,6 +6,10 @@
     font-size: 2.6042vw;
     line-height: 2.6042vw;
 }
+.fz32 {
+    font-size: 1.6667vw;
+    line-height: 2vw;
+}
 .fz24 {
     font-size: 1.25vw;
     line-height: 1.5vw;
@@ -13,4 +17,23 @@
 .fz20 {
     font-size: 1.0417vw;
     line-height: 1.5625vw;
+}
+
+@media (max-width: $table) {
+    .fz65 {
+        font-size: 12.3854vw;
+        line-height: 12.4vw;
+    }
+    .fz20 {
+        font-size: 4vw;
+        line-height: 5.3vw;
+    }
+    .fz50 {
+        font-size: 7.6042vw;
+        line-height: 6.6042vw;
+    }
+    .fz24 {
+        font-size: 3.25vw;
+        line-height: 4.5vw;
+    }
 }

@@ -61,3 +61,17 @@
         transform: translate(-50%, -50%);
     }
 }
+
+@media (max-width: $table) {
+    .video-modal .modal-close {
+        top: -11.0833vw;
+        right: 3.375vw;
+        width: 9.2917vw;
+        height: 9.2917vw;
+    }
+    .modal-close:before,
+    .modal-close:after {
+        width: 9.0417vw;
+        height: 0.1042vw;
+    }
+}

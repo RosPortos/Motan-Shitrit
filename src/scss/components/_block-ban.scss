@@ -1,9 +1,10 @@
 .block-ban {
     position: relative;
     height: 13.6979vw;
-    padding: 1.0417vw 0;
     margin-top: -1px;
-    img {
+    overflow: hidden;
+    padding: 1vw 0;
+    > img {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -24,4 +25,39 @@
             margin-top: 1.0417vw;
         }
     }
+    .logo {
+        position: absolute;
+        right: 2.8125vw;
+        top: 0;
+    }
+}
+
+.block-ban-big {
+    height: 33.0208vw;
+}
+
+.block-ban__wrapper {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    gap: 1.0417vw;
+    .bootom {
+        background: #ffffff;
+        border-radius: 0.625vw;
+        min-height: 9.9479vw;
+        padding: 2.6042vw 2.0833vw;
+        margin-top: 2.6042vw;
+        h3 {
+            color: #4f5561;
+        }
+        p {
+            font-weight: 400;
+            color: #666c77;
+            margin-top: 1.5625vw;
+        }
+    }
+}
+.block-ban__img {
+    width: 34.375vw;
+    height: 33.8021vw;
 }

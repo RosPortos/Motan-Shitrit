@@ -122,3 +122,51 @@
         }
     }
 }
+
+@media (max-width: $table) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 4vw;
+    }
+    .footer-col {
+        margin: 0 !important;
+        .fz24 {
+            font-size: 6.25vw;
+            line-height: 7.5vw;
+        }
+        .soc-block {
+            margin-top: 7.5vw;
+            gap: 7.3021vw;
+        }
+    }
+    .footer__info {
+        margin-top: 7.5vw;
+    }
+    .footer-col ul a {
+        font-size: 5.0417vw;
+        line-height: 7.9vw;
+    }
+    .footer__info p {
+        font-size: 5.0417vw;
+        line-height: 7.9vw;
+    }
+    .footer__info div {
+        font-size: 5.0417vw;
+        line-height: 7.9vw;
+    }
+    .footer__logo {
+        width: 23.1875vw;
+        height: 21.9271vw;
+    }
+    .footer-col:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .soc-block a {
+        width: 7.0938vw;
+        height: 7.0938vw;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page not-main">
+        @include('partials/header.html')
+
+        <main class="main">
+
+            <div class="block-ban ">
+                <img src="img/section/block-ban-img10.jpg" alt="img">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html">עמוד ראשי</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span>שלבי משכנתא</span>
+                        </li>
+                    </ul>
+                    <h1 class="fz65">שלבי משכנתא</h1>
+                </div>
+            </div>
+
+            <div class="wrap-sec form-list sec-p">
+                <div class="wrap-sec-bg corner-decor">
+                    <div class="container">
+                        <div class="list-circle">
+                            <h2 class="fz50 title">
+                                במתן פיננסים הדרך <br> למשכנתא פשוטה
+                            </h2>
+                            <ul>
+                                <li class="fz20">
+                                    <span>1</span>
+                                    <div>
+                                        <b>שלב 1 –</b> פגישת ייעוץ ראשונית ללא עלות
+                                    </div>
+                                </li>
+                                <li class="fz20">
+                                    <span>2</span>
+                                    <div>
+                                        <b>שלב 2 –</b> בניית תמהילי בהתאמה אישית ואופטימלית
+                                    </div>
+                                </li>
+                                <li class="fz20">
+                                    <span>3</span>
+                                    <div>
+                                        <b>שלב 3 –</b> הגשת התיק ומכרז מול הבנקים
+                                    </div>
+                                </li>
+                                <li class="fz20">
+                                    <span>4</span>
+                                    <div>
+                                        <b>שלב 4 –</b> אישור מהבנק
+                                    </div>
+                                </li>
+                                <li class="fz20">
+                                    <span>5</span>
+                                    <div>
+                                        <b>שלב 5 –</b> חתימות בבנק
+                                    </div>
+                                </li>
+                                <li class="fz20">
+                                    <span>6</span>
+                                    <div>
+                                        <b>שלב 6 –</b> התאמת ביטוחים
+                                    </div>
+                                </li>
+                                <li class="fz20">
+                                    <span>7</span>
+                                    <div>
+                                        <b>שלב 7 –</b> שחרור הכסף מהבנק
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form">
+                            <h2 class="form__title fz32">
+                                רוצים לשמוע עוד או לשאול <br>אותנו משהו?
+                            </h2>
+                            <form>
+                                <label class="form__input fz20">
+                                    <input name="name" placeholder="השם שלך" type="text">
+                                </label>
+                                <label class="form__input fz20">
+                                    <input name="phone" placeholder="מס' טלפון" type="tel">
+                                </label>
+                                <label class="form__input fz20">
+                                    <input name="email" placeholder="אימייל" type="email">
+                                </label>
+                                <label class="form__textarea fz20">
+                                    <textarea name="comment" placeholder="כאן אפשר לכתוב לנו "></textarea>
+                                </label>
+                                <div class="form__bottom">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        מעוניין להצטרף לרשימת התפוצה
+                                    </label>
+                                    <button type="submit" class="form__btn fz20 btn btn--purple">שלח</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="partners partners-white sec-p">
+                <div class="container">
+                    <h2 class="partners__title title text-center fz50">
+                        חברות פנסיוני
+                    </h2>
+                    <div class="partners__wrapper">
+                        <a href="#" class="partners-item">
+                            <img loading="lazy" src="img/section/partners-item-icon4.png" alt="img">
+                        </a>
+                        <a href="#" class="partners-item">
+                            <img loading="lazy" src="img/section/partners-item-icon3.png" alt="img">
+                        </a>
+                        <a href="#" class="partners-item">
+                            <img loading="lazy" src="img/section/partners-item-icon2.png" alt="img">
+                        </a>
+                        <a href="#" class="partners-item">
+                            <img loading="lazy" src="img/section/partners-item-icon.png" alt="img">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            @include('partials/subscribe.html')
+
+        </main>
+
+        @include('partials/footer.html')
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

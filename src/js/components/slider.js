@@ -12,8 +12,12 @@ const swiper = new Swiper(".recommend-swiper", {
         prevEl: ".recommend .swiper-button-prev",
     },
     breakpoints: {
-        1150: {
+        991: {
             slidesPerView: 3,
+        },
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 10,
         },
     },
 });
