@@ -26,14 +26,29 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding-top: 4.2708vw;
+    opacity: 0;
+    animation: pageAnim 2s linear 0s 1 normal forwards;
     @media (max-width: $table) {
         padding-top: 14.2708vw;
     }
     &.not-header {
         padding-top: 0;
-        .block-ban-big {
-            padding-top: 15vw;
+    }
+    @media (max-width: $table) {
+        &.not-header {
+            .block-ban-big {
+                padding-top: 15vw;
+            }
         }
+    }
+}
+
+@keyframes pageAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -401,4 +416,8 @@ body {
             margin-right: 3.0417vw;
         }
     }
+}
+
+.hidden {
+    display: none;
 }

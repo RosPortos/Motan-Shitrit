@@ -1,14 +1,7 @@
 "use strict";
 
-$('.page-demo__list a').on('click', function (e) {
-  e.preventDefault();
-  var href = $(this).attr('href');
-  $('.page-demo iframe').attr('src', href);
-});
-
 function headerHide() {
   var header = document.querySelector(".header");
-  var headerScroll = document.querySelector(".header-scroll");
   var scrollPrev = 0;
   window.addEventListener('scroll', function () {
     var scrolled = scrollY;
@@ -32,6 +25,18 @@ function headerHide() {
 if (window.innerWidth > 991) {
   headerHide();
 }
+
+gsap.fromTo('.header-contact', {
+  x: '-100%',
+  opacity: 0
+}, {
+  x: 0,
+  opacity: 1,
+  delay: 1
+});
+setTimeout(function () {
+  document.querySelector('.promo__img').classList.add('anim');
+}, 1000);
 "use strict";
 
 function DynamicAdapt(type) {

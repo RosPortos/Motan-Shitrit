@@ -1,18 +1,5 @@
-$('.page-demo__list a').on('click', function (e) {
-
-    e.preventDefault();
-    let href = $(this).attr('href');
-    $('.page-demo iframe').attr('src', href)
-
-
-
-
-});
-
-
 function headerHide() {
     const header = document.querySelector(".header");
-    const headerScroll = document.querySelector(".header-scroll");
     let scrollPrev = 0;
 
     window.addEventListener('scroll', function () {
@@ -36,4 +23,16 @@ function headerHide() {
 if (window.innerWidth > 991) {
     headerHide();
 }
+
+
+
+gsap.fromTo('.header-contact', { x: '-100%', opacity: 0 }, { x: 0, opacity: 1, delay: 1 })
+
+setTimeout(function () {
+    document.querySelector('.promo__img').classList.add('anim');
+}, 1000);
+
+
+
+
 

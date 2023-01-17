@@ -142,6 +142,9 @@ body.scroll-hide {
   flex-direction: column;
   justify-content: space-between;
   padding-top: 4.2708vw;
+  opacity: 0;
+  -webkit-animation: pageAnim 2s linear 0s 1 normal forwards;
+  animation: pageAnim 2s linear 0s 1 normal forwards;
 }
 @media (max-width: 991px) {
   .page {
@@ -151,10 +154,29 @@ body.scroll-hide {
 .page.not-header {
   padding-top: 0;
 }
-.page.not-header .block-ban-big {
-  padding-top: 15vw;
+@media (max-width: 991px) {
+  .page.not-header .block-ban-big {
+    padding-top: 15vw;
+  }
 }
 
+@-webkit-keyframes pageAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pageAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .main {
   margin-bottom: auto;
 }
@@ -518,6 +540,10 @@ body.scroll-hide {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .header {
   background: #ffffff;
   position: absolute;
@@ -572,7 +598,7 @@ body.scroll-hide {
 .header-contact::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/decor/header-contact-decor.svg");
+  background-image: url("../img/decor/header-contact-decor.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -833,6 +859,22 @@ body.scroll-hide {
   width: 25vw;
   height: 33.8542vw;
   z-index: 222;
+  opacity: 0;
+  transform: translateY(20px) translateX(20px);
+  transition: transform 0.6s linear, opacity 0.3s linear;
+}
+.promo__img::before {
+  right: 0;
+  bottom: 0;
+  transition: right 1.2s linear, bottom 1s linear;
+}
+.promo__img.anim {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+.promo__img.anim::before {
+  right: -1.3021vw;
+  bottom: -1.3021vw;
 }
 .promo__img img {
   width: 100%;
