@@ -64,8 +64,6 @@
     height: 9.4792vw;
     h3 {
         font-weight: 700;
-        font-size: 2.6042vw;
-        line-height: 2.7042vw;
         background: linear-gradient(99.75deg, #6a60cc 59.86%, #4d4bb4 59.91%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -104,5 +102,31 @@
     .about__img {
         width: 68.4583vw;
         height: 73.8542vw;
+    }
+    .about.about-two .ofer-block {
+        max-width: 100%;
+    }
+    .about-advant-item {
+        width: 100%;
+        height: 20.4792vw;
+    }
+    .about-advant {
+        width: 100%;
+        margin-top: 7.4479vw;
+    }
+    .about-advant-item div {
+        font-size: 2.8333vw;
+        line-height: 9.0938vw;
+    }
+    .about-advant-item h3::before {
+        top: calc(100% + 1.7813vw);
+        width: 6.8229vw;
+        height: 0.2vw;
+    }
+    .page {
+        .block-ban {
+            height: auto;
+            padding: 5vw 0;
+        }
     }
 }

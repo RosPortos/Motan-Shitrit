@@ -35,3 +35,9 @@
 .error__btn {
     margin-top: 1.8229vw;
 }
+
+@media (max-width: $table) {
+    .error .container {
+        max-width: calc(100% - 30px);
+    }
+}

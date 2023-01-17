@@ -38,3 +38,15 @@
         }
     }
 }
+
+@media (max-width: $table) {
+    .breadcrumbs__item a,
+    .breadcrumbs__item span {
+        font-size: 2.8333vw;
+        line-height: 3.5625vw;
+    }
+    .breadcrumbs__item::after {
+        font-size: 2.8333vw;
+        line-height: 3.5625vw;
+    }
+}

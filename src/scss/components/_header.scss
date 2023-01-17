@@ -208,7 +208,8 @@
     .header-contact {
         position: static;
         width: 100%;
-        height: 20vh;
+        min-height: 20vh !important;
+        height: auto;
         flex-direction: column;
         padding: 2.6042vw 1.9531vw;
         margin-top: auto;
@@ -217,7 +218,7 @@
             display: none;
         }
         a {
-            font-size: 7.0417vw;
+            font-size: 6.0417vw;
             line-height: 7vw;
             border: none;
             &::before {
@@ -225,7 +226,7 @@
                 height: 4.6771vw;
                 background-size: contain;
                 background-position: center;
-                margin-left: 0.651vw;
+                margin-left: 3.651vw;
             }
         }
     }

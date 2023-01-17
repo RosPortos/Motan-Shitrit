@@ -35,7 +35,6 @@
         font-weight: 700;
         color: #4f5561;
         margin-top: 1.4063vw;
-        line-height: 1.7188vw;
     }
     div {
         font-weight: 400;
@@ -72,5 +71,44 @@
     }
     .directions-box img {
         margin-bottom: 1.4063vw;
+    }
+}
+
+@media (max-width: $table) {
+    .directions__wrapper {
+        grid-template-columns: 1fr;
+        gap: 3.5625vw;
+        margin-top: 7.3854vw;
+    }
+    .directions {
+        padding: 10vw 0;
+    }
+    .directions-box img {
+        width: 11.3854vw;
+        height: 11.3854vw;
+    }
+    .directions-box h3 {
+        margin-top: 2.4063vw;
+        font-size: 5.25vw;
+        line-height: 6.5vw;
+    }
+    .directions-box div {
+        margin-top: 2.0417vw;
+    }
+    .directions-box {
+        padding: 4.6042vw;
+    }
+    .directions__subtitle {
+        max-width: 100%;
+        margin: 4.5625vw auto 0 auto;
+    }
+    .directions__descr {
+        width: 100%;
+        padding: 4.0833vw;
+        margin: 8.3854vw auto 0 auto;
+    }
+    .directions-contact .directions-box {
+        min-height: 36.1042vw;
+        justify-content: center;
     }
 }

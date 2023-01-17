@@ -138,7 +138,6 @@
         }
         .soc-block {
             margin-top: 7.5vw;
-            gap: 7.3021vw;
         }
     }
     .footer__info {
@@ -168,5 +167,14 @@
     .soc-block a {
         width: 7.0938vw;
         height: 7.0938vw;
+    }
+    .soc-block {
+        gap: 7.3021vw;
+    }
+    .soc-block.soc-article {
+        max-width: 100%;
+        height: auto;
+        padding: 3.0417vw 4.8125vw;
+        gap: 3.3021vw;
     }
 }

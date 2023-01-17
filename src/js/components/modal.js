@@ -84,7 +84,7 @@ closeAllModal();
 /////////////////////////////////////////////////////////////////////////
 
 
-bindModal('.trigger', '.modal');
+bindModal('.btn-show-modal-request ', '.modal-request');
 
 //showModal('.modal');
 

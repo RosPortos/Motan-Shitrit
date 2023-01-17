@@ -182,6 +182,15 @@
         line-height: 4.5208vw;
         padding: 1.6771vw 1.9375vw;
     }
-    .articles-item__top {
+    .filter {
+        gap: 2.5208vw;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 3vw;
+    }
+    .filter-btn {
+        width: 40vw;
+        min-width: 40vw;
+        height: 10vw;
     }
 }

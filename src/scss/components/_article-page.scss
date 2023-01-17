@@ -50,3 +50,32 @@
         }
     }
 }
+
+@media (max-width: $table) {
+    .article-page {
+        padding: 10vw 0;
+    }
+    .article-page .container {
+        max-width: calc(100vw - 30px);
+        width: 100%;
+        h2 {
+            font-size: 7.6042vw;
+            line-height: 7.8646vw;
+            margin-bottom: 3.5625vw;
+        }
+        p {
+            font-size: 4.0417vw;
+            line-height: 5.5625vw;
+            margin-bottom: 3.5625vw;
+        }
+        img {
+            margin: 7.3854vw 0;
+        }
+        h3 {
+            font-size: 5.6667vw;
+            line-height: 5.7813vw;
+            margin-top: 7.3854vw;
+            margin-bottom: 3.5625vw;
+        }
+    }
+}

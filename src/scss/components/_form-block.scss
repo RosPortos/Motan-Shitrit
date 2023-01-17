@@ -240,3 +240,103 @@
         text-align: center;
     }
 }
+
+@media (max-width: $table) {
+    .form-sec__wrapper {
+        flex-direction: column;
+        padding: 8vw 4vw;
+        gap: 7.2708vw;
+    }
+    .form-sec {
+        padding-top: 12vw;
+    }
+    .form {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    .form__input {
+        height: 11.3854vw;
+        margin-bottom: 2.7813vw;
+        input {
+            padding: 0 4.5625vw;
+        }
+    }
+    .form__title {
+        margin-bottom: 3.5625vw;
+    }
+    .form__subtitle {
+        margin-bottom: 3.8229vw;
+    }
+    .form-sec__info {
+        width: 100%;
+    }
+    .form-sec__info .contact-link {
+        margin-bottom: 6.3021vw;
+    }
+    .form-sec__soc {
+        padding-top: 6.3021vw;
+    }
+    .form-sec__soc .soc-block {
+        margin-top: 3.0417vw;
+    }
+    .form-sec__info .contact-link::before {
+        height: 3.8854vw;
+        width: 3.8854vw;
+    }
+    .contact-link::before {
+        background-size: contain;
+        margin-left: 2vw;
+    }
+    .form-contact {
+        max-width: calc(100% - 30px);
+    }
+    .list-circle {
+        width: 100%;
+    }
+    .list-circle li {
+        width: 100%;
+    }
+    .list-circle ul {
+        row-gap: 5.0833vw;
+        margin-top: 6.6458vw;
+    }
+    .list-circle li span::after {
+        width: 7.5521vw;
+        height: 7.5521vw;
+    }
+    .list-circle li span {
+        width: 7.5521vw;
+        min-width: 7.5521vw;
+        height: 7.5521vw;
+        margin-left: 2vw;
+    }
+    .form__bottom {
+        flex-direction: column;
+        gap: 3.0417vw;
+    }
+    .checkbox {
+        font-size: 3.7292vw;
+        line-height: 5.5625vw;
+        gap: 3.2604vw;
+    }
+    .checkbox input {
+        width: 3.6771vw;
+        height: 3.6771vw;
+    }
+    .form__textarea {
+        height: 24.9271vw;
+        margin-bottom: 2.7813vw;
+        textarea {
+            padding: 3vw 4.5625vw;
+        }
+    }
+}

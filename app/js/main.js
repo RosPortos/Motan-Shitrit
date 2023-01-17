@@ -5,25 +5,30 @@ $('.page-demo__list a').on('click', function (e) {
   var href = $(this).attr('href');
   $('.page-demo iframe').attr('src', href);
 });
+
 function headerHide() {
   var header = document.querySelector(".header");
   var headerScroll = document.querySelector(".header-scroll");
   var scrollPrev = 0;
   window.addEventListener('scroll', function () {
     var scrolled = scrollY;
+
     if (scrolled > 700) {
       header.classList.add('header-scroll');
     } else {
       header.classList.remove('header-scroll');
     }
+
     if (scrolled > 700 && scrolled < scrollPrev) {
       header.classList.add('header-top');
     } else {
       header.classList.remove('header-top');
     }
+
     scrollPrev = scrolled;
   });
 }
+
 if (window.innerWidth > 991) {
   headerHide();
 }
@@ -32,16 +37,18 @@ if (window.innerWidth > 991) {
 function DynamicAdapt(type) {
   this.type = type;
 }
+
 DynamicAdapt.prototype.init = function () {
   var _this2 = this;
-  var _this = this;
-  // массив объектов
-  this.оbjects = [];
-  this.daClassname = "_dynamic_adapt_";
-  // массив DOM-элементов
-  this.nodes = document.querySelectorAll("[data-da]");
 
-  // наполнение оbjects объктами
+  var _this = this; // массив объектов
+
+
+  this.оbjects = [];
+  this.daClassname = "_dynamic_adapt_"; // массив DOM-элементов
+
+  this.nodes = document.querySelectorAll("[data-da]"); // наполнение оbjects объктами
+
   for (var i = 0; i < this.nodes.length; i++) {
     var node = this.nodes[i];
     var data = node.dataset.da.trim();
@@ -55,37 +62,38 @@ DynamicAdapt.prototype.init = function () {
     оbject.index = this.indexInParent(оbject.parent, оbject.element);
     this.оbjects.push(оbject);
   }
-  this.arraySort(this.оbjects);
 
-  // массив уникальных медиа-запросов
+  this.arraySort(this.оbjects); // массив уникальных медиа-запросов
+
   this.mediaQueries = Array.prototype.map.call(this.оbjects, function (item) {
     return '(' + this.type + "-width: " + item.breakpoint + "px)," + item.breakpoint;
   }, this);
   this.mediaQueries = Array.prototype.filter.call(this.mediaQueries, function (item, index, self) {
     return Array.prototype.indexOf.call(self, item) === index;
-  });
-
-  // навешивание слушателя на медиа-запрос
+  }); // навешивание слушателя на медиа-запрос
   // и вызов обработчика при первом запуске
-  var _loop = function _loop() {
+
+  var _loop = function _loop(_i) {
     var media = _this2.mediaQueries[_i];
     var mediaSplit = String.prototype.split.call(media, ',');
     var matchMedia = window.matchMedia(mediaSplit[0]);
-    var mediaBreakpoint = mediaSplit[1];
+    var mediaBreakpoint = mediaSplit[1]; // массив объектов с подходящим брейкпоинтом
 
-    // массив объектов с подходящим брейкпоинтом
     var оbjectsFilter = Array.prototype.filter.call(_this2.оbjects, function (item) {
       return item.breakpoint === mediaBreakpoint;
     });
     matchMedia.addListener(function () {
       _this.mediaHandler(matchMedia, оbjectsFilter);
     });
+
     _this2.mediaHandler(matchMedia, оbjectsFilter);
   };
+
   for (var _i = 0; _i < this.mediaQueries.length; _i++) {
-    _loop();
+    _loop(_i);
   }
 };
+
 DynamicAdapt.prototype.mediaHandler = function (matchMedia, оbjects) {
   if (matchMedia.matches) {
     for (var i = 0; i < оbjects.length; i++) {
@@ -96,46 +104,51 @@ DynamicAdapt.prototype.mediaHandler = function (matchMedia, оbjects) {
   } else {
     for (var _i2 = 0; _i2 < оbjects.length; _i2++) {
       var _оbject = оbjects[_i2];
+
       if (_оbject.element.classList.contains(this.daClassname)) {
         this.moveBack(_оbject.parent, _оbject.element, _оbject.index);
       }
     }
   }
-};
+}; // Функция перемещения
 
-// Функция перемещения
+
 DynamicAdapt.prototype.moveTo = function (place, element, destination) {
   element.classList.add(this.daClassname);
+
   if (place === 'last' || place >= destination.children.length) {
     destination.insertAdjacentElement('beforeend', element);
     return;
   }
+
   if (place === 'first') {
     destination.insertAdjacentElement('afterbegin', element);
     return;
   }
-  destination.children[place].insertAdjacentElement('beforebegin', element);
-};
 
-// Функция возврата
+  destination.children[place].insertAdjacentElement('beforebegin', element);
+}; // Функция возврата
+
+
 DynamicAdapt.prototype.moveBack = function (parent, element, index) {
   element.classList.remove(this.daClassname);
+
   if (parent.children[index] !== undefined) {
     parent.children[index].insertAdjacentElement('beforebegin', element);
   } else {
     parent.insertAdjacentElement('beforeend', element);
   }
-};
+}; // Функция получения индекса внутри родителя
 
-// Функция получения индекса внутри родителя
+
 DynamicAdapt.prototype.indexInParent = function (parent, element) {
   var array = Array.prototype.slice.call(parent.children);
   return Array.prototype.indexOf.call(array, element);
-};
-
-// Функция сортировки массива по breakpoint и place 
+}; // Функция сортировки массива по breakpoint и place 
 // по возрастанию для this.type = min
 // по убыванию для this.type = max
+
+
 DynamicAdapt.prototype.arraySort = function (arr) {
   if (this.type === "min") {
     Array.prototype.sort.call(arr, function (a, b) {
@@ -143,14 +156,18 @@ DynamicAdapt.prototype.arraySort = function (arr) {
         if (a.place === b.place) {
           return 0;
         }
+
         if (a.place === "first" || b.place === "last") {
           return -1;
         }
+
         if (a.place === "last" || b.place === "first") {
           return 1;
         }
+
         return a.place - b.place;
       }
+
       return a.breakpoint - b.breakpoint;
     });
   } else {
@@ -159,19 +176,24 @@ DynamicAdapt.prototype.arraySort = function (arr) {
         if (a.place === b.place) {
           return 0;
         }
+
         if (a.place === "first" || b.place === "last") {
           return 1;
         }
+
         if (a.place === "last" || b.place === "first") {
           return -1;
         }
+
         return b.place - a.place;
       }
+
       return b.breakpoint - a.breakpoint;
     });
     return;
   }
 };
+
 var da = new DynamicAdapt("max");
 da.init();
 "use strict";
@@ -185,12 +207,14 @@ function menu() {
     document.body.classList.toggle('scroll-hide');
   });
 }
+
 menu();
 "use strict";
 
 var header = document.querySelector('.header'),
-  modaWrap = document.querySelectorAll('.modal-wrap'),
-  scrollHide = calcScroll();
+    modaWrap = document.querySelectorAll('.modal-wrap'),
+    scrollHide = calcScroll();
+
 function bindModal(triggerSelector, modalSelector) {
   var trigger = document.querySelectorAll(triggerSelector);
   var modal = document.querySelector(modalSelector);
@@ -203,6 +227,7 @@ function bindModal(triggerSelector, modalSelector) {
     });
   });
 }
+
 function calcScroll() {
   var div = document.createElement('div');
   div.style.width = '50px';
@@ -214,19 +239,23 @@ function calcScroll() {
   div.remove();
   return scrollWidth;
 }
+
 function hideScroll() {
   document.body.style.overflow = "hidden";
   document.body.style.marginRight = "".concat(scrollHide, "px");
 }
+
 function showScroll() {
   document.body.style.overflow = "";
   document.body.style.marginRight = '';
 }
+
 function showModal(modalItem) {
   var modal = document.querySelector(modalItem);
   closeModal();
   modal.classList.add('active');
 }
+
 function closeModal() {
   var modalAll = document.querySelectorAll('.modal-wrap');
   modalAll.forEach(function (item) {
@@ -234,11 +263,13 @@ function closeModal() {
     showScroll();
   });
 }
+
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
     closeModal();
   }
 });
+
 function closeAllModal() {
   var modalAll = document.querySelectorAll('.modal-wrap');
   var modalClose = document.querySelectorAll('.modal__close, .close-modal');
@@ -256,13 +287,10 @@ function closeAllModal() {
     });
   });
 }
-closeAllModal();
 
-/////////////////////////////////////////////////////////////////////////
+closeAllModal(); /////////////////////////////////////////////////////////////////////////
 
-bindModal('.trigger', '.modal');
-
-//showModal('.modal');
+bindModal('.btn-show-modal-request ', '.modal-request'); //showModal('.modal');
 "use strict";
 
 var swiper = new Swiper(".recommend-swiper", {
@@ -309,9 +337,11 @@ $(document).ready(function () {
     e.preventDefault();
     e.stopPropagation();
     hideModal(".modal-video-wrap");
+
     if ($(this).data("modal-tab") != undefined) {
       goToTab($(this).data("modal-tab"));
     }
+
     showModal($(this).data("modal-video-wrap"));
   });
   $("[data-video-modal]").click(function (e) {
@@ -319,6 +349,7 @@ $(document).ready(function () {
     e.stopPropagation();
     var videoId = $(this).data("video-modal");
     var videoType = $(this).data("video-type");
+
     if (videoType == "youtube") {
       $("#modal-video-iframe").removeClass("vimeo youtube").addClass("youtube").append('<div class="video-iframe" id="' + videoId + '"></div>');
       createVideo(videoId, videoId);
@@ -327,10 +358,12 @@ $(document).ready(function () {
     } else if (videoType == "mp4" || videoType == "drive") {
       $("#modal-video-iframe").removeClass("vimeo youtube").addClass("video").html("\n                      <video controls autoplay playisline>\n                          <source src=\"".concat(videoId, "\">\n                      </video>   \n                  "));
     }
+
     hideModal(".modal-video-wrap");
     showModal("#video-modal");
   });
   var player;
+
   function createVideo(videoBlockId, videoId) {
     player = new YT.Player(videoBlockId, {
       videoId: videoId,
@@ -349,8 +382,7 @@ $(document).ready(function () {
           // if ($(window).width() > 991) {
           setTimeout(function () {
             e.target.playVideo();
-          }, 200);
-          // }
+          }, 200); // }
         }
       }
     });
@@ -368,12 +400,15 @@ function getScrollWidth() {
   div.remove();
   return scrollWidth;
 }
+
 var bodyScrolled = 0;
+
 function showModal(modal) {
   $(modal).addClass("visible");
   bodyScrolled = $(window).scrollTop();
   $("body").addClass("active").scrollTop(bodyScrolled).css("padding-right", getScrollWidth());
 }
+
 function hideModal(modal) {
   $(modal).removeClass("visible");
   bodyScrolled = $(window).scrollTop();

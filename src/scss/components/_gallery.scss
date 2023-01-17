@@ -49,3 +49,15 @@
         }
     }
 }
+
+@media (max-width: $table) {
+    .gallery__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.3021vw;
+        margin-top: 7.0729vw;
+    }
+    .gallery__wrapper .fslightbox {
+        height: 22.5313vw;
+        padding: 2.8vw;
+    }
+}

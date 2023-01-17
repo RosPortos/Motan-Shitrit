@@ -189,4 +189,11 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
+    .recommend-not-slider .recommend__wrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
+        .recommend-item {
+            width: 100%;
+        }
+    }
 }
