@@ -113,13 +113,83 @@
 
             <div class="wrap-sec sec-p">
                 <div class="wrap-sec-bg corner-decor">
-                    @include('partials/articles.html')
+                    <section class="articles sec-p">
+                        <div class="container">
+                            <h2 class="articles__title title text-center fz50">
+                                מאמרי משכנתאות
+                            </h2>
+                            <div class="articles__wrapper">
+                                <article class="articles-item">
+                                    <a href="#">
+                                        <div class="articles-item__top">
+                                            <img loading="lazy" src="img/section/articles-item-img.jpg" alt="img">
+                                            <div class="stickers">
+                                                <time class="sticker" datetime="2021-10-07">7 באוק׳ 2021</time>
+                                                <div class="articles-item__category sticker">משכנתאות</div>
+                                            </div>
+                                        </div>
+                                        <h3 class="articles-item__title fz24">
+                                            מחזור משכנתא
+                                        </h3>
+                                        <div class="articles-item__descr fz20">
+                                            ככל שעובר הזמן, אתם עומדים ביותר ויותר קריטריונים שלא עמדתם בהם בזמן לקיחת
+                                            המשכנתא,
+                                            אך המשכנתא שלכם ממשיכה
+                                            להתנהל לפי התנאים...
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="articles-item">
+                                    <a href="#">
+                                        <div class="articles-item__top">
+                                            <img loading="lazy" src="img/section/articles-item-img6.jpg" alt="img">
+                                            <div class="stickers">
+                                                <time class="sticker" datetime="2021-10-07">7 באוק׳ 2021</time>
+                                                <div class="articles-item__category sticker">משכנתאות</div>
+                                            </div>
+                                        </div>
+                                        <h3 class="articles-item__title fz24">
+                                            פיקדון מול קרן כספית
+                                        </h3>
+                                        <div class="articles-item__descr fz20">
+                                            ככל שעובר הזמן, אתם עומדים ביותר ויותר קריטריונים שלא עמדתם בהם בזמן לקיחת
+                                            המשכנתא,
+                                            אך המשכנתא שלכם ממשיכה
+                                            להתנהל לפי התנאים...
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="articles-item">
+                                    <a href="#">
+                                        <div class="articles-item__top">
+                                            <img loading="lazy" src="img/section/articles-item-img5.jpg" alt="img">
+                                            <div class="stickers">
+                                                <time class="sticker" datetime="2021-10-07">7 באוק׳ 2021</time>
+                                                <div class="articles-item__category sticker">משכנתאות</div>
+                                            </div>
+                                        </div>
+                                        <h3 class="articles-item__title fz24">
+                                            מחזור משכנתא
+                                        </h3>
+                                        <div class="articles-item__descr fz20">
+                                            ככל שעובר הזמן, אתם עומדים ביותר ויותר קריטריונים שלא עמדתם בהם בזמן לקיחת
+                                            המשכנתא,
+                                            אך המשכנתא שלכם ממשיכה
+                                            להתנהל לפי התנאים...
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
 
             @include('partials/recommend.html')
 
-            @include('partials/partners.html')
+            @include('partials/partners.html', {
+            'title': 'בין לקוחותינו'
+            })
 
             @include('partials/subscribe.html')
 
