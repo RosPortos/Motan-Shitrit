@@ -400,6 +400,9 @@ body.scroll-hide {
   width: fit-content;
   margin-bottom: 1.0417vw;
 }
+.ofer-block p {
+  margin-bottom: 1.6vw;
+}
 .ofer-block ul li {
   font-weight: 400;
   color: #666c77;
@@ -695,6 +698,7 @@ body.scroll-hide {
   height: 6.3542vw;
   -o-object-fit: cover;
   object-fit: cover;
+  display: block;
 }
 .logo::before {
   position: absolute;
